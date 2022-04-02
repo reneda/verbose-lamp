@@ -1,0 +1,29 @@
+class Solution {
+
+public: bool palin(string s,int 1, int h)
+
+{
+
+while(1<h)
+
+{
+
+if(s [1++] !=s[h--]) return false;
+
+} return true;
+
+} bool valid Palindrome (string s) { bool chance=true; int low-0, high-s.length()-1; while(low<=high) { if(s [low] !=s[high]) {
+
+return
+
+(palin(s, low+1,high) || palin(s, low, high-1));
+
+} low++; high--;
+
+}
+
+return true;
+
+}
+
+};
