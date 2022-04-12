@@ -1,6 +1,9 @@
 class Solution {
 public:
     void gameOfLife(vector<vector<int>>& board) {
+        //straightforward solution
+        //to have the solution in 0(1) space, make the value as 0.5 to indicate 0->1 change
+        // and -0.5 to indicate 1->0 change. coding will get a little more complicated
         vector<vector<int>> copy;
         int m=board.size(),n=board[0].size();
         for(int i=0;i<board.size();i++)
